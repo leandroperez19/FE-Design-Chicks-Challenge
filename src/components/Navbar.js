@@ -1,25 +1,16 @@
 import '../stylesheets/navbar.css';
 import logo from '../assets/share/chicks-logo-large.svg';
 import BurgerMenu from './BurgerMenu';
-import { useEffect, useState, memo } from 'react';
+import { useState, memo } from 'react';
 import NavbarSections from './NavbarSections';
 import {RxHamburgerMenu,FaChevronDown,HiShoppingCart,FaUser} from '../assets/share/icons';
+import { useScreen } from '../hooks/useScreen';
 
 export default memo(function Navbar() {
 
   const sections = ['Currency','Items','Accounts','Services','Swap','Sell']
   const [burgerMenuState,setBurgerMenuState] = useState(false);
-  const [isMobile,setIsMobile] = useState(window.innerWidth < 1240);
-
-
-  useEffect(()=>{
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < 1240);
-    };
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  },[])
+  const {isMobile} = useScreen(1240)
 
   return (
     <nav className='navbar'>

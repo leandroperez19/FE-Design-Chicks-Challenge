@@ -1,16 +1,18 @@
 import {AiOutlineSearch} from '../assets/share/icons';
+import '../stylesheets/searchInputMobile.css';
 
-export default function SearchInputMobile() {
+export default function SearchInputMobile({setSearchInputState}) {
   return (
     <div className="searchInputMobile">
       <div className="searchInputMobile_container">
-        <label htmlFor="searchInput"> 
+        <label htmlFor="searchInputMobile_container-input"> 
           <AiOutlineSearch />
         </label>
-        <input id="searchInput" type="text" placeholder="Search" />
-        <span>Close</span>
+        <input id="searchInputMobile_container-input" type="text" placeholder="Search" />
+        <span className='searchInputMobile_container-closeBtn' onClick={()=>setSearchInputState(false)}>
+          Close
+        </span>
       </div>
-      <div className='searchInputComponent_bg'></div>
     </div>
   )
 }
