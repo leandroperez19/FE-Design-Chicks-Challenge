@@ -1,7 +1,5 @@
-import {IoMdClose} from 'react-icons/io';
-import {AiFillCaretDown} from 'react-icons/ai'
-import '../assets/burgerMenu.css';
-
+import '../stylesheets/burgerMenu.css';
+import {IoMdClose,AiFillCaretDown} from '../assets/share/icons'
 
 export default function BurgerMenu({setBurgerMenuState,sections}) {
 

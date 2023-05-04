@@ -1,12 +1,9 @@
-import '../assets/navbar.css';
-import {RxHamburgerMenu} from 'react-icons/rx';
-import logo from '../assets/chicks-logo-large.svg';
-import {FaUser} from 'react-icons/fa';
+import '../stylesheets/navbar.css';
+import logo from '../assets/share/chicks-logo-large.svg';
 import BurgerMenu from './BurgerMenu';
 import { useEffect, useState, memo } from 'react';
 import NavbarSections from './NavbarSections';
-import {FaChevronDown} from 'react-icons/fa';
-import {HiShoppingCart} from 'react-icons/hi'
+import {RxHamburgerMenu,FaChevronDown,HiShoppingCart,FaUser} from '../assets/share/icons';
 
 export default memo(function Navbar() {
 

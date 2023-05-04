@@ -1,0 +1,25 @@
+main{
+    width: 100vw;
+    height: 80em;
+    /* background: linear-gradient(to bottom, #5762d5,#4c6085); */
+    background-color: #2f3140;
+    position: relative;
+    top: 4.5em;
+    padding: 24px;
+    color: #fff;
+}
+
+main .backgroundImage{
+    width: 100%;
+    height: auto;
+    min-height: 20em;
+    position: absolute;
+    opacity: .04;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+h1{
+    font-size: 24px;
+}

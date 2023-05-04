@@ -1,0 +1,36 @@
+.filterArea{
+    margin-top: 10px;
+}
+
+.filterArea_top-left,.filterArea_bottom-right{
+    height: 50px;
+    margin: 10px 0;
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.filterArea_top-left .select{
+    flex-basis: 80%;
+    flex-grow: 1;
+}
+.filterArea_top-left button{
+    flex-basis: 20%;
+    flex-grow: 1;
+    margin-left: 8px;
+    font-size: 24px;
+    border-radius: 4px;
+    color: #fff;
+    outline: none;
+    border: none;
+    background-color: #5762d5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* .filterArea_bottom-right{
+    height: 50px;
+    position: relative;
+    display: flex;
+    width: ;
+} */

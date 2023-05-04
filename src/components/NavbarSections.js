@@ -1,6 +1,6 @@
 import React from 'react';
-import {FaChevronDown} from 'react-icons/fa';
-import '../assets/navbarSections.css';
+import '../stylesheets/navbarSections.css';
+import {FaChevronDown} from '../assets/share/icons';
 
 function NavbarSections({sections}) {
   return (
