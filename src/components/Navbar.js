@@ -3,23 +3,65 @@ import {RxHamburgerMenu} from 'react-icons/rx';
 import logo from '../assets/chicks-logo-large.svg';
 import {FaUser} from 'react-icons/fa';
 import BurgerMenu from './BurgerMenu';
-import { useState } from 'react';
+import { useEffect, useState, memo } from 'react';
+import NavbarSections from './NavbarSections';
+import {FaChevronDown} from 'react-icons/fa';
+import {HiShoppingCart} from 'react-icons/hi'
 
-export default function Navbar() {
+export default memo(function Navbar() {
 
+  const sections = ['Currency','Items','Accounts','Services','Swap','Sell']
   const [burgerMenuState,setBurgerMenuState] = useState(false);
+  const [isMobile,setIsMobile] = useState(window.innerWidth < 1240);
+
+
+  useEffect(()=>{
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 1240);
+    };
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  },[])
 
   return (
     <nav className='navbar'>
         <div className='navbar_left'>
-            <RxHamburgerMenu className='navbar_left-burgerMenuIcon' onClick={()=>setBurgerMenuState(true)} />
-            <img src={logo} alt='logo' className='navbar_left-logo' />
-            {burgerMenuState && <BurgerMenu setBurgerMenuState={setBurgerMenuState} />}
+            {
+              isMobile &&
+              <>
+                <RxHamburgerMenu 
+                className='navbar_left-burgerMenuIcon' 
+                onClick={()=>setBurgerMenuState(true)} 
+                />
+                {burgerMenuState && 
+                <BurgerMenu 
+                setBurgerMenuState={setBurgerMenuState}
+                sections={sections} 
+                />
+                }
+              </>
+            }
+            <div className='navbar_left-logo' >
+              <img src={logo} alt='logo' />
+            </div>
+            {!isMobile && <NavbarSections sections={sections}/>}
         </div>
-        <button className='navbar_signInBtn'>
-            SIGN IN
-            <FaUser className='navbar_signInBtn-userIcon' />
-        </button>
+        <div className='navbar_right'>
+          <div className='navbar_right-currencySelector'>
+            <span>USD</span>
+            <FaChevronDown className='navbar_right-currencySelector-icon' />
+          </div>
+          <div className='navbar_right-cart'>
+            <HiShoppingCart className='navbar_right-cart-cartIcon' />
+            <span>CART (5)</span>
+          </div>
+          <button className='navbar_right-signInBtn'>
+              SIGN IN
+              <FaUser className='navbar_right-signInBtn-userIcon' />
+          </button>
+        </div>
     </nav>
   )
 }
+)

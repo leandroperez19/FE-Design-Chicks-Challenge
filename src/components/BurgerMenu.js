@@ -2,9 +2,10 @@ import {IoMdClose} from 'react-icons/io';
 import {AiFillCaretDown} from 'react-icons/ai'
 import '../assets/burgerMenu.css';
 
-export default function BurgerMenu({setBurgerMenuState}) {
 
-  const sections = ['Currency','Items','Accounts','Services','Swap','Sell Currency','Sell Item','Sell Acount']
+export default function BurgerMenu({setBurgerMenuState,sections}) {
+
+  const burgerMenuSections = [...sections,'USD','CART (5)']
 
   return (
     <div className="burgerMenu">
@@ -14,8 +15,8 @@ export default function BurgerMenu({setBurgerMenuState}) {
       </div>
       <ul className='burgerMenu_sections'>
         {
-          sections.map(section=>(
-            <li className='burgerMenu_sections-section'>
+          burgerMenuSections.map(section=>(
+            <li className='burgerMenu_sections-section' key={section}>
               <span>{section}</span>
               <AiFillCaretDown />
             </li>
