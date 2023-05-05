@@ -26,6 +26,9 @@
     color: #39e29d;
     font-size: 20px;
 }
+.rotate{
+    transform: rotate(90deg);
+}
 .select_left{
     display: flex;
     align-items: center;
