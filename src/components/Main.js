@@ -6,8 +6,10 @@ export default function Main() {
   return (
     <main>
       <img src={backgroundImage} alt='backgroundImage' className='backgroundImage' />  
-      <h1>Condimentum consectetur</h1>
-      <FilterArea />
+      <div className='main_container'>
+        <h1>Condimentum consectetur</h1>
+        <FilterArea />
+      </div>
     </main>
   )
 }

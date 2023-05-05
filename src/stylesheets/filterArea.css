@@ -1,7 +1,14 @@
 .filterArea{
     margin-top: 10px;
 }
-
+@media (min-width:768px) {
+    .filterArea{
+        display: grid;
+        grid-template-columns: 240px 1fr 261px;
+        gap: 0 8px;
+        grid-auto-rows: minmax(50px, auto);
+    }
+}
 .filterArea_top-left,.filterArea_bottom-right{
     height: 50px;
     margin: 10px 0;
@@ -28,14 +35,3 @@
     justify-content: center;
     align-items: center;
 }
-/* @media (min-width:575px) {
-    .filterArea_top-left button{
-        display: none !important;
-    }
-} */
-/* .filterArea_bottom-right{
-    height: 50px;
-    position: relative;
-    display: flex;
-    width: ;
-} */

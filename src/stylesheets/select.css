@@ -7,8 +7,13 @@
     height: 100%;
     padding: 0 10px;
     border-radius: 4px;
-    width: 80%;
+    width: 100%;
     font-size: 15px;
+    cursor: pointer;
+    transition: filter cubic-bezier(0.165, 0.84, 0.44, 1) .3s;
+}
+.select:hover{
+    filter: brightness(2);
 }
 .small{
     border-radius: 4px 0 0 4px;

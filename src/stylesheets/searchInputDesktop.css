@@ -7,8 +7,12 @@
     background-color: #4c608534;
     border-radius: 4px;
     padding: 0 34px;
+    margin: 10px 0;
+    transition: filter cubic-bezier(0.165, 0.84, 0.44, 1) .3s;
 }
-
+.searchInputDesktop:hover{
+    filter: brightness(2);
+}
 #searchInputDesktop_input{
     height: 100%;
     width: 100%;

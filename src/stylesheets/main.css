@@ -20,6 +20,21 @@ main .backgroundImage{
     z-index: 0;
 }
 
+.main_container{
+    margin: 60px auto;
+    max-width: 75em;
+}
+
 h1{
     font-size: 24px;
+}
+.flexbox{
+    width: 100%;
+    background-color: rgb(6, 23, 37);
+    display: flex;
+    flex-wrap: wrap;
+}
+.div2{
+    background-color: #f43;
+    width: 40em;
 }
