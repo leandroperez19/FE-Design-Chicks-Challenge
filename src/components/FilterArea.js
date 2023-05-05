@@ -1,5 +1,5 @@
 import { useState} from 'react'
-import {GiBroadsword,AiOutlineSearch,GiFeather,GiPaperBagCrumpled} from '../assets/share/icons';
+import {GiBroadsword,AiOutlineSearch,GiFeather,GiPaperBagCrumpled} from '../assets/icons';
 import Select from './Select';
 import '../stylesheets/filterArea.css';
 import SearchInputMobile from './SearchInputMobile';

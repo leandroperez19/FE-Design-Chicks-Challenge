@@ -1,10 +1,10 @@
-import '../stylesheets/navbar.css';
-import logo from '../assets/share/chicks-logo-large.svg';
-import BurgerMenu from './BurgerMenu';
+import '../../stylesheets/layout/navbar.css';
+import logo from '../../assets/chicks-logo-large.svg';
+import BurgerMenu from '../BurgerMenu';
 import { useState, memo } from 'react';
-import NavbarSections from './NavbarSections';
-import {RxHamburgerMenu,FaChevronDown,HiShoppingCart,FaUser} from '../assets/share/icons';
-import { useScreen } from '../hooks/useScreen';
+import NavbarSections from '../NavbarSections';
+import {RxHamburgerMenu,FaChevronDown,HiShoppingCart,FaUser} from '../../assets/icons';
+import { useScreen } from '../../hooks/useScreen';
 
 export default memo(function Navbar() {
 

@@ -1,4 +1,4 @@
-import {AiOutlineSearch} from '../assets/share/icons';
+import {AiOutlineSearch} from '../assets/icons';
 import '../stylesheets/searchInputMobile.css';
 
 export default function SearchInputMobile({setSearchInputState}) {

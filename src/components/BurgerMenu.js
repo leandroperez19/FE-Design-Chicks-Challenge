@@ -1,5 +1,5 @@
 import '../stylesheets/burgerMenu.css';
-import {IoMdClose,AiFillCaretDown} from '../assets/share/icons'
+import {IoMdClose,AiFillCaretDown} from '../assets/icons'
 
 export default function BurgerMenu({setBurgerMenuState,sections}) {
 

@@ -1,6 +1,6 @@
-import '../stylesheets/main.css';
-import backgroundImage from '../assets/share/main-background.jpg';
-import FilterArea from './FilterArea';
+import '../../stylesheets/layout/main.css';
+import backgroundImage from '../../assets/main-background.jpg';
+import FilterArea from '../FilterArea';
 
 export default function Main() {
   return (

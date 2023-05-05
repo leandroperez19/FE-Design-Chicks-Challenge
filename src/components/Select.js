@@ -1,4 +1,4 @@
-import {AiFillCaretDown} from '../assets/share/icons'
+import {AiFillCaretDown} from '../assets/icons'
 import '../stylesheets/select.css';
 
 function Select({type,icon,label,placeholder}) {
