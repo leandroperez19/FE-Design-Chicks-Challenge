@@ -4,6 +4,7 @@
     position: relative;
     margin-top: 10px;
     padding: 28px;
+    padding-bottom: 0;
     border: 2px solid #4f5e7c;
 }
 .cardsContainer_top{
