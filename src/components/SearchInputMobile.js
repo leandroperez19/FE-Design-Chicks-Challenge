@@ -8,7 +8,7 @@ export default function SearchInputMobile({setSearchInputState}) {
         <label htmlFor="searchInputMobile_container-input"> 
           <AiOutlineSearch />
         </label>
-        <input id="searchInputMobile_container-input" type="text" placeholder="Search" />
+        <input id="searchInputMobile_container-input" type="text" placeholder="Search" autoFocus />
         <span className='searchInputMobile_container-closeBtn' onClick={()=>setSearchInputState(false)}>
           Close
         </span>

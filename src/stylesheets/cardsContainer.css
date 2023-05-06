@@ -3,7 +3,8 @@
     background-color: #2f3140;
     position: relative;
     margin-top: 10px;
-    padding: 18px 24px;
+    padding: 28px;
+    border: 2px solid #4f5e7c;
 }
 .cardsContainer_top{
     height: 50px;
@@ -14,6 +15,9 @@
 .cardsContainer_top-sortBy{
     height: 100%;
     width: 10em;
+}
+.cardsContainer_top-sortBy .small{
+    border-radius: 4px;
 }
 .cardsContainer_top-cardsAmount{
     color: hsla(0,0%,100%,.75);
@@ -26,4 +30,10 @@
     .cardsContainer_top-sortBy{
         width: 100%;
     }
+}
+.cardsContainer_cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
 }

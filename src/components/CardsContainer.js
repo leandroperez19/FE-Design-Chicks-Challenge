@@ -1,8 +1,38 @@
 import '../stylesheets/cardsContainer.css';
 import Select from './Select';
 import {VscSettings} from '../assets/icons';
+import { useEffect, useState } from 'react';
+import Card from './Card';
+import Pagination from './Pagination';
 
 export default function CardsContainer() {
+
+	const [cards,setCards] = useState([]);
+	
+	function createCards(){
+		let n = 15; 
+		let arr = []; 
+		for (let i = 0; i < n; i++) {
+  		i < 8 ? 
+			arr.push({
+				onSale: true, 
+				title: 'Blue Partyhat', 
+				info: 'Lorem ipsum dolor sit amet consetetur sadipscing elitr'
+			})
+			:
+			arr.push({
+				onSale: false, 
+				title: 'Blue Partyhat', 
+				info: 'Lorem ipsum dolor sit amet consetetur sadipscing elitr'
+			})
+		}
+		setCards(arr)	
+	};
+
+	useEffect(()=>{
+		createCards()
+	},[])
+
   return (
   <div className='cardsContainer'>
     <div className='cardsContainer_top'>
@@ -18,6 +48,13 @@ export default function CardsContainer() {
 				/>
 			</div>
     </div>
+
+		<div className='cardsContainer_cards'>
+			{cards.map(card=>(
+				<Card onSale={card.onSale} title={card.title} info={card.info} />
+			))}
+		</div>
+		<Pagination totalPages={50} />
   </div>
   )
 }
