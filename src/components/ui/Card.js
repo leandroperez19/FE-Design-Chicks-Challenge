@@ -1,6 +1,6 @@
-import gameItem from '../assets/gameItem.png';
-import {FaGamepad,HiShoppingCart,FaSort} from '../assets/icons';
-import '../stylesheets/card.css';
+import gameItem from '../../assets/gameItem.png';
+import {FaGamepad,HiShoppingCart,FaSort} from '../../assets/icons';
+import '../../stylesheets/ui/card.css';
 
 export default function Card({onSale,title,info}) {
   return (

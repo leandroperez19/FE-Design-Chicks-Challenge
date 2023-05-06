@@ -1,8 +1,8 @@
 import '../../stylesheets/layout/navbar.css';
 import logo from '../../assets/chicks-logo-large.svg';
-import BurgerMenu from '../BurgerMenu';
+import BurgerMenu from '../ui/BurgerMenu';
 import { useState, memo } from 'react';
-import NavbarSections from '../NavbarSections';
+import NavbarSections from '../ui/NavbarSections';
 import {RxHamburgerMenu,FaChevronDown,HiShoppingCart,FaUser} from '../../assets/icons';
 import { useScreen } from '../../hooks/useScreen';
 

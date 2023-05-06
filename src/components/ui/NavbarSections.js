@@ -1,5 +1,5 @@
-import '../stylesheets/navbarSections.css';
-import {FaChevronDown} from '../assets/icons';
+import '../../stylesheets/ui/navbarSections.css';
+import {FaChevronDown} from '../../assets/icons';
 
 function NavbarSections({sections}) {
   return (

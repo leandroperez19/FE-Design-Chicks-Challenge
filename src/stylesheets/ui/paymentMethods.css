@@ -1,0 +1,32 @@
+.paymentMethods{
+    background-color: #2a2c3b;
+    width: 100%;
+    padding: 10px 24px;
+}
+.paymentMethods_images{
+    max-width: 1248px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color:  hsla(0,0%,100%,.75);
+    font-size: 14px;
+}
+.paymentMethods_images img{
+    width: 50px;
+    height: auto;
+    margin: 5px;
+}
+.paymentMethods_images span{
+    margin: 5px;
+}
+@media (min-width:1024px) {
+    .paymentMethods_images{
+        justify-content: flex-start;
+    }
+    .paymentMethods_images img{
+        width: 70px;
+    }
+}

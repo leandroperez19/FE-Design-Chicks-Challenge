@@ -1,7 +1,6 @@
 main{
-    width: 100vw;
+    width: 98vw;
     height: fit-content;
-    /* background: linear-gradient(to bottom, #5762d5,#4c6085); */
     background-color: #36394c;
     position: relative;
     top: 4.5em;
@@ -27,14 +26,4 @@ main .backgroundImage{
 
 h1{
     font-size: 26px;
-}
-.flexbox{
-    width: 100%;
-    background-color: rgb(6, 23, 37);
-    display: flex;
-    flex-wrap: wrap;
-}
-.div2{
-    background-color: #f43;
-    width: 40em;
 }

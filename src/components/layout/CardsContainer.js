@@ -1,9 +1,9 @@
 import '../../stylesheets/layout/cardsContainer.css';
-import Select from '../Select';
+import Select from '../ui/Select';
 import {VscSettings} from '../../assets/icons';
 import { useEffect, useState } from 'react';
-import Card from '../Card';
-import Pagination from '../Pagination';
+import Card from '../ui/Card';
+import Pagination from '../ui/Pagination';
 
 export default function CardsContainer() {
 

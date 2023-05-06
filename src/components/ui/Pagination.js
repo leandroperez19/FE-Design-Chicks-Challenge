@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
-import {FaChevronLeft, FaChevronRight} from '../assets/icons';
-import '../stylesheets/pagination.css';
+import {FaChevronLeft, FaChevronRight} from '../../assets/icons';
+import '../../stylesheets/ui/pagination.css';
 
 export default function Pagination() {
 

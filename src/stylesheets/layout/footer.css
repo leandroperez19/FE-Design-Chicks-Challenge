@@ -1,0 +1,53 @@
+footer{
+    width: 100%;
+    top: 60px;
+    height: fit-content;
+    position: relative;
+    background-color: #2f3140;
+}
+.footer_brandInfo{
+    padding: 24px;
+}
+.footer_brandInfo-email{
+    width: 100%;
+    max-width: 1248px;
+    margin: 0 auto;
+    border-bottom: 2px solid #4c6085;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 40px;
+}
+.footer_brandInfo-email img{
+    width: 250px;
+    height: auto;
+    margin-bottom: 20px;
+}
+.footer_brandInfo-email h4{
+    font-size: 14px ;
+    color: hsla(0,0%,100%,.75);
+}
+.footer_brandInfo-review{
+    margin: 40px auto;
+    margin-bottom: 20px;
+    width: fit-content;
+    text-align: center;
+    color: hsla(0,0%,100%,.75);
+    font-weight: 300;
+    font-size: 12px;
+}
+.footer_brandInfo-review svg{
+    margin-top: 5px;
+    font-size: 20px;
+    background-color: #39e29d;
+    padding: 2px;
+}
+.footer_brandInfo-review svg:nth-child(2n){
+    margin-left: 2px;
+}
+h5{
+    padding: 24px;
+    text-align: center;
+    margin: 0 auto;
+    color: hsla(0,0%,100%,.75);
+}

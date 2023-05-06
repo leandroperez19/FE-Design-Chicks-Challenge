@@ -1,5 +1,5 @@
-import {AiFillCaretDown} from '../assets/icons'
-import '../stylesheets/select.css';
+import {AiFillCaretDown} from '../../assets/icons'
+import '../../stylesheets/ui/select.css';
 
 function Select({type,icon,label,placeholder}) {
   return (

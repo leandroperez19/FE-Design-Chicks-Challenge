@@ -1,5 +1,5 @@
-import { AiOutlineSearch } from '../assets/icons';
-import '../stylesheets/searchInputDesktop.css';
+import { AiOutlineSearch } from '../../assets/icons';
+import '../../stylesheets/ui/searchInputDesktop.css';
 
 export default function SearchInputDesktop() {
   return (
