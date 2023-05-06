@@ -5,11 +5,15 @@
     height: fit-content;
     color: #fff;
     font-size: 14px;
+    max-width: 1248px;
+    margin: 0 auto;
 }
 .footerDropdown_top{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-weight: 600;
+    font-size: 16px;
 }
 .footerDropdown_bottom{
     margin-top: 15px;
@@ -22,4 +26,13 @@
 }
 .footerDropdown_bottom li{
     margin-top: 10px;
+}
+
+@media (min-width:768px) {
+    .footerDropdown{
+        /* background-color: #1f3; */
+        width: fit-content;
+        border: none;
+        padding: 0;
+    }
 }
