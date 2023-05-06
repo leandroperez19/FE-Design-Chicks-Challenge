@@ -1,10 +1,10 @@
 import { useState} from 'react'
-import {GiBroadsword,AiOutlineSearch,GiFeather,GiPaperBagCrumpled} from '../assets/icons';
-import Select from './Select';
-import '../stylesheets/filterArea.css';
-import SearchInputMobile from './SearchInputMobile';
-import { useScreen } from '../hooks/useScreen';
-import SearchInputDesktop from './SearchInputDesktop';
+import {GiBroadsword,AiOutlineSearch,GiFeather,GiPaperBagCrumpled} from '../../assets/icons';
+import Select from '../Select';
+import '../../stylesheets/layout/filterArea.css';
+import SearchInputMobile from '../SearchInputMobile';
+import { useScreen } from '../../hooks/useScreen';
+import SearchInputDesktop from '../SearchInputDesktop';
 
 
 function FilterArea() {
