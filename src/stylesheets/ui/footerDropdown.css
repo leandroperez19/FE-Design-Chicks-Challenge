@@ -26,11 +26,14 @@
 }
 .footerDropdown_bottom li{
     margin-top: 10px;
+    cursor: pointer;
+}
+.footerDropdown_bottom li:hover{
+    text-decoration: underline;
 }
 
 @media (min-width:768px) {
     .footerDropdown{
-        /* background-color: #1f3; */
         width: fit-content;
         border: none;
         padding: 0;

@@ -15,25 +15,17 @@ export default memo(function Navbar() {
   return (
     <nav className='navbar'>
         <div className='navbar_left'>
-            {
-              isMobile &&
-              <>
-                <RxHamburgerMenu 
-                className='navbar_left-burgerMenuIcon' 
-                onClick={()=>setBurgerMenuState(true)} 
-                />
-                {burgerMenuState && 
-                <BurgerMenu 
-                setBurgerMenuState={setBurgerMenuState}
-                sections={sections} 
-                />
-                }
-              </>
-            }
-            <div className='navbar_left-logo' >
-              <img src={logo} alt='logo' />
-            </div>
-            {!isMobile && <NavbarSections sections={sections}/>}
+          {
+            isMobile &&
+            <>
+              <RxHamburgerMenu className='navbar_left-burgerMenuIcon' onClick={()=>setBurgerMenuState(true)} />
+              {burgerMenuState && <BurgerMenu setBurgerMenuState={setBurgerMenuState} sections={sections} />}
+            </>
+          }
+          <div className='navbar_left-logo' >
+            <img src={logo} alt='logo' />
+          </div>
+          {!isMobile && <NavbarSections sections={sections}/>}
         </div>
         <div className='navbar_right'>
           <div className='navbar_right-currencySelector'>
@@ -45,8 +37,8 @@ export default memo(function Navbar() {
             <span>CART (5)</span>
           </div>
           <button className='navbar_right-signInBtn'>
-              SIGN IN
-              <FaUser className='navbar_right-signInBtn-userIcon' />
+            SIGN IN
+            <FaUser className='navbar_right-signInBtn-userIcon' />
           </button>
         </div>
     </nav>

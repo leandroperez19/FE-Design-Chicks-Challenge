@@ -60,12 +60,10 @@ h5{
         justify-content: space-between;
         align-items: flex-start;
         margin: 0 auto;
-        /* background-color: #dd3; */
         padding: 0 24px;
-        margin-top: 20px;
+        margin-top: 60px;
     }
     .footer_brandInfo-email{
-        /* background-color: rgb(65, 10, 15); */
         padding: 0;
         width: fit-content;
         margin: 0;
@@ -77,14 +75,12 @@ h5{
         width: 200px;
     }
     .footer_brandInfo-review{
-        /* background-color: #d3f; */
         margin: 0;
     }
     .footer_brandInfo-review{
         display: flex;
         align-items: center;
         flex-wrap: wrap;
-        /* background-color: rgb(98, 106, 165); */
         padding: 0;
         margin: 0;
     }
@@ -106,6 +102,7 @@ h5{
         font-weight: 400;
     }
 }
+
 @media (min-width:1248px) {
     .footer_brandInfo{
         padding: 0;
