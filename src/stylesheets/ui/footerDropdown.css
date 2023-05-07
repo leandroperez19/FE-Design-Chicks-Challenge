@@ -1,9 +1,11 @@
+@import '../global.css';
+
 .footerDropdown{
     width: 100%;
     padding: 18px 0px;
-    border-bottom: 2px solid #4c6085;
+    border-bottom: 2px solid var(--border-color);
     height: fit-content;
-    color: #fff;
+    color: var(--font-color);
     font-size: 14px;
     max-width: 1248px;
     margin: 0 auto;
@@ -17,7 +19,7 @@
 }
 .footerDropdown_bottom{
     margin-top: 15px;
-    color: hsla(0,0%,100%,.75);
+    color: var(--light-gray);
     transform: scaleY(0);
     animation: scaleY .3s cubic-bezier(0.165, 0.84, 0.44, 1) 0s 1 normal forwards;
 }

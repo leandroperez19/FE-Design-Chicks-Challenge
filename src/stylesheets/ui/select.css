@@ -1,3 +1,5 @@
+@import '../global.css';
+
 .select{
     display: flex;
     align-items: center;
@@ -19,11 +21,11 @@
     border-radius: 4px 0 0 4px;
 }
 .small:nth-child(2){
-    border-left: 1px solid rgba(76, 96, 133, 0.61);
+    border-left: 1px solid var(--border-color);
     border-radius: 0 4px 4px 0;
 }
 .smallIcon{
-    color: #39e29d;
+    color: var(--green);
     font-size: 20px;
 }
 .rotate{
@@ -44,5 +46,5 @@
 }
 .select_left-text-placeholder{
     font-size: 15px;
-    color: #fff;
+    color: var(--font-color);
 }

@@ -1,9 +1,10 @@
+@import '../global.css';
+
 .navbar_sections{
     display: flex;
-    /* background-color: #32d; */
     height: 100%;
     position: relative;
-    color: #fff;
+    color: var(--font-color);
     text-transform: uppercase;
     max-width: 60em;
     margin-left: 20px;
@@ -24,14 +25,14 @@
     position: absolute;
     width: 0%;
     height: 2px;
-    background-color: #39e29d;
+    background-color: var(--green);
     bottom: 0;
     left: 0;
     transition: width cubic-bezier(0.075, 0.82, 0.165, 1) .3s;
 }
 .navbar_sections-section:hover{
     background-color: #39e29e18;
-    color: #39e29d;
+    color: var(--green);
 }
 .navbar_sections-section:hover::after{
     width: 100%;

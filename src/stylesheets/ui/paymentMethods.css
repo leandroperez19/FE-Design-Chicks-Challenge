@@ -11,7 +11,7 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    color:  hsla(0,0%,100%,.75);
+    color:  var(--light-gray);
     font-size: 14px;
 }
 .paymentMethods_images img{

@@ -1,10 +1,11 @@
+@import '../global.css';
+
 .card{
     width: 100%;
     background-color: #313649;
     margin: 0px 0px;
     padding: 20px;
     border-radius: 4px;
-    /* max-width: 215px; */
 }
 .card_top{
     display: flex;
@@ -22,15 +23,15 @@
 }
 .card_top-stockInfo span:first-child::before{
     content: '• ';
-    color: #39e29d;
+    color: var(--green);
 }
 .card_top-stockInfo span:first-child:empty::before{
     content: '';
 }
 .card_top-stockInfo span:last-child{
     padding: 2px 5px;
-    border: 1px solid #39e29d;
-    color: #39e29d;
+    border: 1px solid var(--green);
+    color: var(--green);
     border-radius: 2px;
 }
 .card_top-customInput{
@@ -46,7 +47,7 @@
     border-radius: 4px;
     background-color: #3a445d;
     padding: 10px 20px 10px 10px;
-    color: #fff;
+    color: var(--font-color);
 }
 .card_top-customInput-input::-webkit-inner-spin-button,
 .card_top-customInput-input::-webkit-outer-spin-button{
@@ -75,8 +76,8 @@
     align-items: center;
 }
 .card_middle-title-gameIcon{
-    color: #39e29d;
-    border: 1px solid #39e29d;
+    color: var(--green);
+    border: 1px solid var(--green);
     padding: 6px 0px;
     border-radius: 12px;
     font-size: 30px;
@@ -89,13 +90,13 @@
 .card_middle-price span:last-child{
     margin-left: 10px;
     text-decoration: line-through;
-    color: #9498a5;
+    color: var(--dark-gray);
     text-decoration-color: red;
     text-decoration-thickness: 2px;
 }
 .card_middle p{
     font-size: 10px;
-    color: #9498a5;
+    color: var(--dark-gray);
     margin-top: 5px;
     font-weight: 400;
 }
@@ -121,7 +122,7 @@
 }
 .card_bottom button:first-child{
     margin-right: 3px;
-    color: #9498a5;
+    color: var(--dark-gray);
     background-color: #34394b;
 }
 .card_bottom button:last-child{
@@ -129,9 +130,9 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    color: #fff;
+    color: var(--font-color);
     padding: 5px;
-    background-color: #5762d5;
+    background-color: var(--purple);
     
 }
 .card_bottom-button-cartIcon{

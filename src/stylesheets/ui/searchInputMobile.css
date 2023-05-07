@@ -1,3 +1,5 @@
+@import '../global.css';
+
 .searchInputMobile{
     position: fixed;
     top: 0;
@@ -43,10 +45,10 @@ label{
     flex-grow: 1;
     flex-basis: 85%;
     padding: 8px 8px 8px 40px;
-    color: #fff;
+    color: var(--font-color);
 }
 #searchInputMobile_container-input::placeholder{
-    color: #9498a5;
+    color: var(--dark-gray);
     font-size: 16px;
 }
 .searchInputMobile_container-closeBtn{

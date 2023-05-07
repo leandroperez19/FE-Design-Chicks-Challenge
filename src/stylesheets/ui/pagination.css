@@ -1,3 +1,5 @@
+@import '../global.css';
+
 .pagination{
     margin: 50px auto;
     display: flex;
@@ -23,20 +25,20 @@
 .pagination_chevronLeft,
 .pagination_chevronRight{
     margin: 0 5px;
-    border: 1px solid #5762d5;
+    border: 1px solid var(--purple);
 }
 .pagination_chevronLeft:hover,
 .pagination_chevronRight:hover{
-    background-color: #5762d5;
+    background-color: var(--purple);
 }
 .page:hover{
-    background-color: #fff3;
+    background-color: var(--font-color)3;
 }
 .currentPage{
-    background-color: #5762d5;
+    background-color: var(--purple);
     transition: filter cubic-bezier(0.165, 0.84, 0.44, 1) .3s;
 }
 .currentPage:hover{
     filter: brightness(1.2);
-    background-color: #5762d5;
+    background-color: var(--purple);
 } 
