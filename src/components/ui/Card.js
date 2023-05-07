@@ -1,8 +1,10 @@
-import gameItem from '../../assets/gameItem.png';
 import {FaGamepad,HiShoppingCart,FaSort} from '../../assets/icons';
 import '../../stylesheets/ui/card.css';
 
-export default function Card({onSale,title,info}) {
+export default function Card({onSale,title,description,image,price,discount}) {
+
+  let shortDescription = description.slice(0,64).trim() + '...';
+
   return (
     <div className='card'>
       <div className='card_top'>
@@ -17,16 +19,16 @@ export default function Card({onSale,title,info}) {
       </div>
 
       <div className='card_middle'>
-        <img src={gameItem} alt='gameItem' className='card_middle-img' />
+        <img src={image} alt='gameItem' className='card_middle-img' />
         <div className='card_middle-title'>
           <span>{title}</span>
           <FaGamepad className='card_middle-title-gameIcon' />
         </div>
         <div className='card_middle-price'>
-          <span>{onSale && '$450.00'}</span>
-          <span>{onSale && '$522.50'}</span>
+          <span>{(onSale && price) && price}</span>
+          <span>{(onSale && discount) && discount}</span>
         </div>
-        <p>{info}</p>
+        <p>{description.length > 64 ? shortDescription : description}</p>
       </div>
 
       <div className='card_bottom'>

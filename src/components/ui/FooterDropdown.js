@@ -17,14 +17,7 @@ export default function FooterDropdown({title,sections}) {
         <span>{title}</span>
         {isMobile && <FaChevronDown />}
       </div>
-      {isMobile && isOpen && (
-        <ul className='footerDropdown_bottom'>
-          {sections.map((section) => (
-            <li key={section}>{section}</li>
-          ))}
-        </ul>
-      )}
-      {!isMobile && (
+      {(!isMobile || isOpen) && (
         <ul className='footerDropdown_bottom'>
           {sections.map((section) => (
             <li key={section}>{section}</li>

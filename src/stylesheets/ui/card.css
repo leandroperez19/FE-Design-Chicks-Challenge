@@ -99,6 +99,8 @@
     color: var(--dark-gray);
     margin-top: 5px;
     font-weight: 400;
+    min-height: 26px;
+    max-height: 26px;
 }
 .card_bottom{
     display: flex;

@@ -14,33 +14,33 @@ export default memo(function Navbar() {
 
   return (
     <nav className='navbar'>
-        <div className='navbar_left'>
-          {
-            isMobile &&
-            <>
-              <RxHamburgerMenu className='navbar_left-burgerMenuIcon' onClick={()=>setBurgerMenuState(true)} />
-              {burgerMenuState && <BurgerMenu setBurgerMenuState={setBurgerMenuState} sections={sections} />}
-            </>
-          }
-          <div className='navbar_left-logo' >
-            <img src={logo} alt='logo' />
-          </div>
-          {!isMobile && <NavbarSections sections={sections}/>}
+      <div className='navbar_left'>
+        {
+        isMobile &&
+          <>
+            <RxHamburgerMenu className='navbar_left-burgerMenuIcon' onClick={()=>setBurgerMenuState(true)} />
+            {burgerMenuState && <BurgerMenu setBurgerMenuState={setBurgerMenuState} sections={sections} />}
+          </>
+        }
+        <div className='navbar_left-logo' >
+          <img src={logo} alt='logo' />
         </div>
-        <div className='navbar_right'>
-          <div className='navbar_right-currencySelector'>
-            <span>USD</span>
-            <FaChevronDown className='navbar_right-currencySelector-icon' />
-          </div>
-          <div className='navbar_right-cart'>
-            <HiShoppingCart className='navbar_right-cart-cartIcon' />
-            <span>CART (5)</span>
-          </div>
-          <button className='navbar_right-signInBtn'>
-            SIGN IN
-            <FaUser className='navbar_right-signInBtn-userIcon' />
-          </button>
+        {!isMobile && <NavbarSections sections={sections}/>}
+      </div>
+      <div className='navbar_right'>
+        <div className='navbar_right-currencySelector'>
+          <span>USD</span>
+          <FaChevronDown className='navbar_right-currencySelector-icon' />
         </div>
+        <div className='navbar_right-cart'>
+          <HiShoppingCart className='navbar_right-cart-cartIcon' />
+          <span>CART (5)</span>
+        </div>
+        <button className='navbar_right-signInBtn'>
+          SIGN IN
+          <FaUser className='navbar_right-signInBtn-userIcon' />
+        </button>
+      </div>
     </nav>
   )
 }
