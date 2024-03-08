@@ -6,7 +6,17 @@ footer{
     height: fit-content;
     position: relative;
     background-color:var(--primary-color);
+
+    @media (768px <= width) {
+        height: 18em;
+        padding-top: 30px;
+    }
+
+    @media (1024px <= width) {
+        height: 22em;
+    }
 }
+
 .footer_brandInfo{
     padding: 24px;
 }
@@ -14,11 +24,10 @@ footer{
     width: 100%;
     max-width: 1248px;
     margin: 0 auto;
-    border-bottom: 2px solid var(--border-color);
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
 }
 .footer_brandInfo-email img{
     width: 250px;
@@ -36,17 +45,14 @@ footer{
     text-align: center;
     color: var(--light-gray);
     font-weight: 300;
-    font-size: 12px;
+    font-size: 14px;
 }
 .footer_brandInfo-review svg{
     margin-top: 5px;
-    font-size: 20px;
-    background-color: var(--green);
+    font-size: 24px;
     padding: 2px;
 }
-.footer_brandInfo-review svg:nth-child(2n){
-    margin-left: 2px;
-}
+
 h5{
     padding: 24px;
     text-align: center;
@@ -63,7 +69,7 @@ h5{
         align-items: flex-start;
         margin: 0 auto;
         padding: 0 24px;
-        margin-top: 60px;
+        gap: 60px;
     }
     .footer_brandInfo-email{
         padding: 0;
@@ -85,6 +91,10 @@ h5{
         flex-wrap: wrap;
         padding: 0;
         margin: 0;
+        position: absolute;
+        flex-direction: column;
+        top: 160px;
+        right: 35px;
     }
     .footer_brandInfo-review h4{
         order: 2;
@@ -102,11 +112,20 @@ h5{
         margin-top: 40px;
         font-size: 14px;
         font-weight: 400;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
     }
 }
 
-@media (min-width:1248px) {
+@media (min-width: 1024px) {
     .footer_brandInfo{
-        padding: 0;
+        padding: 0 20px;
+        position: relative;
+    }
+
+    .footer_brandInfo-review {
+        right: 1;
+        top: 70px;
     }
 }

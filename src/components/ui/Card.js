@@ -3,7 +3,7 @@ import '../../stylesheets/ui/card.css';
 
 export default function Card({onSale,title,description,image,price,discount}) {
 
-  let shortDescription = description.slice(0,64).trim() + '...';
+  let shortDescription = description.length > 100 ? description.slice(0,80).trim() + '...' : description;
 
   return (
     <div className='card'>
@@ -25,10 +25,10 @@ export default function Card({onSale,title,description,image,price,discount}) {
           <FaGamepad className='card_middle-title-gameIcon' />
         </div>
         <div className='card_middle-price'>
-          <span>{(onSale && price) && price}</span>
+          <span>{(price) && price}</span>
           <span>{(onSale && discount) && discount}</span>
         </div>
-        <p>{description.length > 64 ? shortDescription : description}</p>
+        <p>{shortDescription}</p>
       </div>
 
       <div className='card_bottom'>

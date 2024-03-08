@@ -20,7 +20,11 @@ main .backgroundImage{
 
 .main_container{
     margin: 30px auto;
-    max-width: 78em;
+    max-width: 566px;
+
+    @media (1024px < width) {
+        max-width: 1260px;
+    }
 }
 
 h1{

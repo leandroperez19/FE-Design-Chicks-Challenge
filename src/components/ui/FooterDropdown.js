@@ -15,7 +15,7 @@ export default function FooterDropdown({title,sections}) {
     <div className='footerDropdown'>
       <div className='footerDropdown_top' onClick={toggleDropdown} >
         <span>{title}</span>
-        {isMobile && <FaChevronDown />}
+        {isMobile && <FaChevronDown className={isOpen && 'chevron-up'}/>}
       </div>
       {(!isMobile || isOpen) && (
         <ul className='footerDropdown_bottom'>

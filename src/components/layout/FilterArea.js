@@ -12,12 +12,17 @@ function FilterArea() {
   const [searchInputState,setSearchInputState] = useState(false);
   const {isMobile} = useScreen(575);
 
+  const games = ['Oldschool Runescape', 'Runescape 3', 'Gissel game']
+  const prices = ['100$', '50$', '10$']
+  const types = ['Armor', 'Weapon', 'Jewerly']
+
   return (
     <div className='filterArea'>
       <div className='filterArea_top-left'>
         <Select 
           icon={<GiBroadsword className='bigIcon'/>} 
           placeholder={'Select a game'} 
+          options={games}
         />
         {isMobile && 
           <button onClick={()=>setSearchInputState(true)}>
@@ -35,12 +40,14 @@ function FilterArea() {
           icon={<GiPaperBagCrumpled className='smallIcon'/>} 
           placeholder={'All'} 
           label={'Price'} 
+          options={prices}
         />
         <Select 
           type={'small'} 
           icon={<GiFeather className='smallIcon' />} 
           placeholder={'All'} 
-          label={'Item Type'} 
+          label={'Item Type'}
+          options={types}
         />
         </div>
     </div>

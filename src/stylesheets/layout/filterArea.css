@@ -3,7 +3,7 @@
 .filterArea{
     margin-top: 10px;
 }
-@media (min-width:768px) {
+@media (min-width:1024px) {
     .filterArea{
         display: grid;
         grid-template-columns: 240px 1fr 261px;

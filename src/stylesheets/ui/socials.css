@@ -1,14 +1,15 @@
 @import '../global.css';
 
 .socials{
-    width: 100%;
-    padding: 0 24px;
+    @media (768px <= width <= 1024px) {
+        position: absolute;
+        top: 140px;
+    }
 }
+
 .socials_links{
-    border-bottom: 2px solid var(--border-color);
     width: 100%;
-    max-width: 1248px;
-    padding: 20px 0;
+    max-width: 156px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -25,25 +26,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
     margin: 0 5px;
     cursor: pointer;
+    background-color: #4a53b5;
 }
 
-.facebook{
-    background-color: #3b5999 !important;
-}
-.insta{
-    background-image: url(https://grocurv.com/media/images/Insta_g7k2Rr9.height-480.jpg);
-    background-size: cover;
-}
-.twitter{
-    background-color: #32a3cd;
-}
-.discord{
-    background-color: #7289d7;
-}
 .link{
     height: 20px;
     width: 20px;

@@ -12,7 +12,7 @@
 .pagination_chevronLeft,
 .pagination_chevronRight,
 .page{
-    font-size: 15px;
+    font-size: 12px;
     border-radius: 4px;
     display: flex;
     height: 100%;
@@ -21,6 +21,10 @@
     width: 33px;
     cursor: pointer;
     transition: all cubic-bezier(0.165, 0.84, 0.44, 1) .3s;
+
+    @media (768px < width) {
+        font-size: 15px;
+    }
 }
 .pagination_chevronLeft,
 .pagination_chevronRight{

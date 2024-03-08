@@ -16,6 +16,7 @@ Follow these steps to install and set up the project:
 1. Clone this repository: git clone `https://github.com/leandroperez19/FE-Design-Chicks-Challenge.git`
 2. Navigate to the project directory: cd `FE-Design-Chicks-Challenge`
 3. Install the dependencies: `npm install`
+4. Do `npm start` to run the project
 
 ## Dependencies
 
