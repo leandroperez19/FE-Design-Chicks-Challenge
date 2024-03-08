@@ -4,7 +4,6 @@ import { VscSettings } from "../../assets/icons";
 import { useEffect, useState } from "react";
 import Card from "../ui/Card";
 import Pagination from "../ui/Pagination";
-import gameItem from "../../assets/gameItem.png";
 import axe from '../../assets/axe.png';
 import partyHat from '../../assets/blue-partyhat.png';
 
